@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [ParallelSuite]">
+  <test thread-count="2" parallel="classes" name="ParallelTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Tests.Class2PageValidation">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyPlaceholder"/>
+          <include name="verifyTitleOfthePage"/>
+        </methods>
+      </class> <!-- Tests.Class2PageValidation -->
+    </classes>
+  </test> <!-- ParallelTest(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->

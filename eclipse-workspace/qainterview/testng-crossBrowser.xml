@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="CrossBrowserSuite" thread-count="2">
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Tests.Class1UIValidation"/>
+            <class name="Tests.Class2PageValidation"/>
+            <class name="Tests.Class3FactorialTestData"/>
+            <class name="Tests.Class4AboutLink"/>
+            <class name="Tests.Class5AutomateBug"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="Tests.Class1UIValidation"/>
+            <class name="Tests.Class2PageValidation"/>
+            <class name="Tests.Class3FactorialTestData"/>
+            <class name="Tests.Class4AboutLink"/>
+            <class name="Tests.Class5AutomateBug"/>
+        </classes>
+    </test>
+
+</suite>
